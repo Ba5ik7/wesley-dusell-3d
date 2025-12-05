@@ -1,16 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'wwd-root',
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
-
     <router-outlet />
   `,
   styles: [],
 })
-export class App {
-  protected readonly title = signal('wesley-dusell-3d');
-}
+export class App {}
